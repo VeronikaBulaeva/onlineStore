@@ -1,6 +1,6 @@
 # Online Store
 
-[Посмотреть проект](https://veronikabulaeva.github.io/users-table/)
+[Посмотреть проект](https://veronikabulaeva.github.io/onlineStore/)
 
 Приложение было реализована без сторонних библиотек, на React + TS.
 
