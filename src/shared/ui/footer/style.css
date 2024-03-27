@@ -1,6 +1,16 @@
 .containerFooter {
-	max-width: 1110px;
-	margin: 20px auto 0 auto;
+	width: 1110px;
+	margin: 0 auto 0 auto;
+	flex: 0 0 auto;
+	align-self: center;
+}
+
+@media (max-width: 1100px) {
+	.containerFooter {
+		width: auto;
+		align-self: stretch;
+		margin: 0;
+	}
 }
 
 .footerContent {

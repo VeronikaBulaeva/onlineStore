@@ -1,11 +1,11 @@
 .cartTotalCostBlock {
-	display: grid;
-	grid-template-rows: 50px 40px 40px;
 }
 
-@media (max-width: 900px) {
-	.cartTotalCostBlock {
-	}
+.cartCostBlock {
+	display: grid;
+	grid-template-rows: 50px 40px 40px;
+	position: sticky;
+	top: 25px;
 }
 
 .totalCost {

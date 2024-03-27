@@ -7,8 +7,10 @@ import Footer from "../shared/ui/footer";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <AppRouterProvider />
+      <div className={"appContainer"}>
+        <Header />
+        <AppRouterProvider />
+      </div>
       <Footer />
     </BrowserRouter>
   );

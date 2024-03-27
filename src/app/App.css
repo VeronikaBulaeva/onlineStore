@@ -2,4 +2,12 @@
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
 	background-color: #EAEAEA;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.appContainer {
+	flex: 1 0 auto;
+	margin-bottom: 20px;
 }
