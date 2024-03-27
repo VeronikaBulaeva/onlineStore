@@ -1,0 +1,59 @@
+.containerHeader {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.headerContent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-inline: 20px;
+}
+
+.siteName {
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 31px;
+	text-align: left;
+	width: 85px;
+	height: 30px;
+	top: 15px;
+	color: #101010;
+}
+
+.headerIcons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 45px;
+}
+
+.cartIcon, .likeIcon {
+	width: 22px;
+	height: 20px;
+	transition: 0.5s ease;
+}
+
+.cartIcon:hover, .likeIcon:hover {
+	transform: scale(1.15);
+}
+
+.cartIcon {
+	position: absolute;
+}
+
+.cartLength {
+	position: relative;
+	top: -8px;
+	left: 14px;
+	width: 18px;
+	height: 18px;
+	border-radius: 8px;
+	background-color: #FFA542;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
