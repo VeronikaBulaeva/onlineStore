@@ -6,7 +6,9 @@ import Footer from "../shared/ui/footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      basename={"process.env.NODE_ENV === 'production' ? '/onlineStore' : '/'"}
+    >
       <div className={"appContainer"}>
         <Header />
         <AppRouterProvider />
