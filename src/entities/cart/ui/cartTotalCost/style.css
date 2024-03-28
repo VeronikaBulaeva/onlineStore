@@ -65,3 +65,75 @@
 		height: auto;
 	}
 }
+
+.payFormTitle {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: #1C1C27;
+	margin-bottom: 20px;
+}
+
+.payModalClose {
+	border: none;
+	background: none;
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.payModalImg {
+	width: 30px;
+	height: 30px;
+}
+
+.payFormInput {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 20px;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	outline: none;
+	border: none;
+	color: #1C1D21;
+	box-shadow: 0 0 20px 0 #00000025;
+}
+
+.payFormBottom {
+	display: flex;
+	gap: 20px;
+}
+
+.payFormButton {
+	grid-column: 1/2;
+	grid-row: 6/7;
+	width: 100%;
+	height: 65px;
+}
+
+::placeholder {
+	color: #a9a9a9;
+}
+
+.paymentSuccess {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 18px;
+	text-align: center;
+	color: #000000;
+}
+
+.paymentSuccessBlock {
+	display: grid;
+	gap: 50px;
+	margin-block: 30px;
+}
+
+.paymentSuccessImg {
+	width: 50px;
+	height: 50px;
+	justify-self: center;
+}
+
+
