@@ -49,46 +49,49 @@ const CartTotalCost: FC<ICartTotalCost> = ({ totalCost }) => {
           <img className={"payModalImg"} src={Close} alt={"Закрыть"} />
         </button>
         <p className={"payFormTitle"}>Форма оплаты</p>
-        <InputMask
-          mask="9999 9999 99 99"
-          maskChar=" "
-          className={"payFormInput"}
-          placeholder="Номер карты"
-          required
-        />
-        <InputMask
-          mask=""
-          className={"payFormInput"}
-          type="text"
-          placeholder="Имя на карте"
-          required
-        />
-        <div className={"payFormBottom"}>
+        <form className={"payForm"} name={"payForm"} action="#" method="post">
           <InputMask
-            mask="99/99"
+            mask="9999 9999 99 99"
             maskChar=" "
             className={"payFormInput"}
-            placeholder="MM/YY"
+            placeholder="Номер карты"
             required
           />
           <InputMask
-            mask="999"
+            mask=""
             maskChar=" "
             className={"payFormInput"}
-            placeholder="CVC"
+            type="text"
+            placeholder="Имя на карте"
             required
           />
-        </div>
-        <button
-          className={"payFormButton totalCostButton"}
-          type="submit"
-          onClick={() => {
-            modalClosing();
-            setModalPaymentSuccess(true);
-          }}
-        >
-          Оплатить {totalCost} ₽
-        </button>
+          <div className={"payFormBottom"}>
+            <InputMask
+              mask="99/99"
+              maskChar=" "
+              className={"payFormInput"}
+              placeholder="MM/YY"
+              required
+            />
+            <InputMask
+              mask="999"
+              maskChar=" "
+              className={"payFormInput"}
+              placeholder="CVC"
+              required
+            />
+          </div>
+          <button
+            type={"submit"}
+            className={"payFormButton totalCostButton"}
+            onSubmit={() => {
+              modalClosing();
+              setModalPaymentSuccess(true);
+            }}
+          >
+            Оплатить {totalCost} ₽
+          </button>
+        </form>
       </Modal>
       <Modal active={modalPaymentSuccess} onClose={modalPaymentSuccessClosing}>
         <button
