@@ -6,9 +6,9 @@ import Footer from "../shared/ui/footer";
 
 function App() {
   return (
-    <BrowserRouter
-      basename={"process.env.NODE_ENV === 'production' ? '/onlineStore' : '/'"}
-    >
+    <BrowserRouter basename={"/onlineStore"}>
+      {" "}
+      {/*Необходимо для отображения на GitHub Pages*/}
       <div className={"appContainer"}>
         <Header />
         <AppRouterProvider />
