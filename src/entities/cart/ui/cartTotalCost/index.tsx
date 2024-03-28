@@ -49,7 +49,7 @@ const CartTotalCost: FC<ICartTotalCost> = ({ totalCost }) => {
           <img className={"payModalImg"} src={Close} alt={"Закрыть"} />
         </button>
         <p className={"payFormTitle"}>Форма оплаты</p>
-        <form className={"payForm"} name={"payForm"} action="#" method="post">
+        <form className={"payForm"} name={"payForm"} action="">
           <InputMask
             mask="9999 9999 99 99"
             maskChar=" "
@@ -82,9 +82,8 @@ const CartTotalCost: FC<ICartTotalCost> = ({ totalCost }) => {
             />
           </div>
           <button
-            type={"submit"}
             className={"payFormButton totalCostButton"}
-            onSubmit={() => {
+            onClick={() => {
               modalClosing();
               setModalPaymentSuccess(true);
             }}
