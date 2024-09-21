@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef, useState } from "react";
 import "./style.css";
-import Modal from "../../../../shared/ui/modal/modal";
+import Modal from "../../../../shared/ui/modal/modal.tsx";
 import Close from "../../../../shared/constans/icons/close-svg.svg";
 import Success from "../../../../shared/constans/icons/success.svg";
-import PayForm from "../../../../shared/ui/payForm/payForm.tsx";
+import PayForm from "../payForm.tsx";
 
 interface ICartTotalCost {
   totalCost: number;
@@ -33,7 +33,6 @@ const CartTotalCost: FC<ICartTotalCost> = ({ totalCost }) => {
   }, [modalPaymentSuccess]);
 
   const onSubmit = () => {
-    console.log("ASa");
     modalClosing();
     setModalPaymentSuccess(true);
   };

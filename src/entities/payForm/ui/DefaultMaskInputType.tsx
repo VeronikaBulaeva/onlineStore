@@ -1,6 +1,6 @@
 import { FC, forwardRef } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { DefaultMaskInputType, InputType } from "../../../types.ts";
+import { DefaultMaskInputType, InputType } from "../../../shared/types.ts";
 import { IMaskInput } from "react-imask";
 
 interface CardMaskProps extends InputType {

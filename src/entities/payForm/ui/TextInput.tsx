@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { InputType } from "../../../types.ts";
+import { InputType } from "../../../shared/types.ts";
 
 const TextInput: FC<InputType> = ({ name, placeholder, className }) => {
   const { control } = useFormContext();

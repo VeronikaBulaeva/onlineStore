@@ -7,8 +7,6 @@ import Footer from "../shared/ui/footer";
 function App() {
   return (
     <BrowserRouter basename={"/onlineStore"}>
-      {" "}
-      {/*Необходимо для отображения на GitHub Pages*/}
       <div className={"appContainer"}>
         <Header />
         <AppRouterProvider />

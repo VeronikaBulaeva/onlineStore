@@ -1,6 +1,6 @@
 import { FC } from "react";
 import CartItem from "../../../../entities/cart/ui/cartItem";
-import CartTotalCost from "../../../../entities/cart/ui/cartTotalCost";
+import CartTotalCost from "../../../../features/payForm/ui/cartTotalCost";
 import "./style.css";
 import { useCart } from "../../../../shared/lib/useCart";
 
@@ -10,6 +10,7 @@ const CartList: FC = () => {
     (acc, item) => acc + item.price * item.count,
     0,
   );
+
   return (
     <div className="containerCart">
       <div className="cartBlock">

@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { FormFields, formSchema } from "./Schemas.ts";
+import { FormFields, formSchema } from "../lib/Schemas.ts";
 import { zodResolver } from "@hookform/resolvers/zod";
-import DefaultMaskInput from "./payFormInputs/DefaultMaskInputType.tsx";
-import TextInput from "./payFormInputs/TextInput.tsx";
+import DefaultMaskInput from "../../../entities/payForm/ui/DefaultMaskInputType.tsx";
+import TextInput from "../../../entities/payForm/ui/TextInput.tsx";
 
 const defaultValues = {
   cardNumber: "",
