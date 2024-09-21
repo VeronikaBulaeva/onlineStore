@@ -10,7 +10,7 @@ interface IProductList {
 
 const ProductList: FC<IProductList> = ({ productType }) => {
   return (
-    <div className={"productListItem"}>
+    <div className="productListItem">
       {products
         .filter(({ type }) => type === productType)
         .map(({ img, oldPrice, price, type, rate, title, id }) => (

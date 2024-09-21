@@ -9,41 +9,44 @@ import Whats from "../../constans/icons/Whatsapp.svg";
 
 const Footer: FC = () => {
   return (
-    <section className={"containerFooter"}>
-      <div className={"footerContent"}>
+    <section className="containerFooter">
+      <div className="footerContent">
         <Link to={CATALOG_ROUTE}>
-          <p className={"siteName"}>QPICK</p>
+          <p className="siteName">QPICK</p>
         </Link>
-        <nav className={"footerNav"}>
-          <Link to={""} className={"footerLink"}>
+        <nav className="footerNav">
+          <Link to={""} className="footerLink">
             Избранное
           </Link>
-          <Link to={CART_ROUTE} className={"footerLink"}>
+          <Link to={CART_ROUTE} className="footerLink">
             Корзина
           </Link>
-          <Link to={""} className={"footerLink"}>
+          <Link to={""} className="footerLink">
             Контакты
           </Link>
         </nav>
-        <div className={"conditionAndLanguages"}>
-          <Link to={""} className={"condition"}>
+        <div className="conditionAndLanguages">
+          <Link to={""} className="condition">
             Условия сервиса
           </Link>
           <div className={"languages"}>
-            <img src={Languages} className={"languageIcon"} alt={"Язык"} />
-            <button className={"languagesButton"}>Рус</button>
-            <button className={"languagesButton"}>Eng</button>
+            <img src={Languages} className="languageIcon" alt="Язык" />
+            <button className="languagesButton">Рус</button>
+            <button className="languagesButton">Eng</button>
           </div>
         </div>
-        <div className={"footerSocial"}>
-          <Link to={""} className={"footerSocialIconVK"}>
+        <div className="footerSocial">
+          <Link
+            to="https://vk.com/veronika_bylaeva"
+            className="footerSocialIconVK"
+          >
             <img src={VK} alt={"Вконтакте"} />
           </Link>
-          <Link to={""} className={"footerSocialIcon"}>
-            <img src={TG} alt={"Телеграмм"} />
+          <Link to="https://t.me/vabulaeva" className="footerSocialIcon">
+            <img src={TG} alt="Телеграмм" />
           </Link>
-          <Link to={""} className={"footerSocialIcon"}>
-            <img src={Whats} alt={"Вотсап"} />
+          <Link to="https://t.me/vabulaeva" className="footerSocialIcon">
+            <img src={Whats} alt="Вотсап" />
           </Link>
         </div>
       </div>

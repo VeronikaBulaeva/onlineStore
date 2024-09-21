@@ -11,12 +11,12 @@ const CartList: FC = () => {
     0,
   );
   return (
-    <div className={"containerCart"}>
-      <div className={"cartBlock"}>
-        <p className={"containerCartTitle"}>Корзина</p>
-        <div className={"containerCartBlock"}>
+    <div className="containerCart">
+      <div className="cartBlock">
+        <p className="containerCartTitle">Корзина</p>
+        <div className="containerCartBlock">
           {cart.length ? (
-            <div className={"cartListAll"}>
+            <div className="cartListAll">
               {cart.map(({ img, price, id, count, title }) => (
                 <CartItem
                   count={count}
@@ -30,7 +30,7 @@ const CartList: FC = () => {
             </div>
           ) : (
             <div>
-              <p className={"containerCartText"}>В корзине пока ничего нет</p>
+              <p className="containerCartText">В корзине пока ничего нет</p>
             </div>
           )}
           <CartTotalCost totalCost={totalCost} />

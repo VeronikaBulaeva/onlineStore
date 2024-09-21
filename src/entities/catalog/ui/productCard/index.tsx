@@ -13,25 +13,25 @@ const ProductCard: FC<IProduct> = ({
   id,
 }) => {
   return (
-    <div className={"productCard"}>
-      <div className={"productCardImg"}>
+    <div className="productCard">
+      <div className="productCardImg">
         <img src={img} alt={title} />
       </div>
-      <div className={"productCardDescription"}>
-        <p className={"productCardTitle"}>{title}</p>
-        <div className={"productCardPrices"}>
-          <p className={"productCardPrice"}>{price} ₽</p>
+      <div className="productCardDescription">
+        <p className="productCardTitle">{title}</p>
+        <div className="productCardPrices">
+          <p className="productCardPrice">{price.toLocaleString()} ₽</p>
           {oldPrice ? (
-            <p className={"productCardOldPrice"}>{oldPrice} ₽</p>
+            <p className="productCardOldPrice">{oldPrice.toLocaleString()} ₽</p>
           ) : null}
         </div>
-        <div className={"productCardRate"}>
-          <img src={Star} className={"rateIcon"} alt={"Звезда"} />
-          <p className={"productCardRateNumber"}>{rate}</p>
+        <div className="productCardRate">
+          <img src={Star} className="rateIcon" alt="Звезда" />
+          <p className="productCardRateNumber">{rate}</p>
         </div>
 
         <button
-          className={"productCardBuyButton"}
+          className="productCardBuyButton"
           onClick={() => {
             handleBuy({ img, id, title, price });
           }}

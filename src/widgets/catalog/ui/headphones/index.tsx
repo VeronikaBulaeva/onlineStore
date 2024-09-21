@@ -5,12 +5,12 @@ import "./style.css";
 
 const Headphones: FC = () => {
   return (
-    <div className={"productList"}>
-      <div className={"productListContainer"}>
-        <p className={"productListTitle"}>Наушники</p>
+    <div className="productList">
+      <div className="productListContainer">
+        <p className="productListTitle">Наушники</p>
         <ProductList productType={HeadPhoneType.wired} />
 
-        <p className={"productListTitle"}>Беспроводные наушники</p>
+        <p className="productListTitle">Беспроводные наушники</p>
         <ProductList productType={HeadPhoneType.wireless} />
       </div>
     </div>

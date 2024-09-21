@@ -19,3 +19,14 @@ export enum HeadPhoneType {
   wireless = "wireless",
   wired = "wired",
 }
+
+export interface InputType {
+  name: string;
+  placeholder?: string;
+  required: boolean;
+  className?: string;
+}
+
+export interface DefaultMaskInputType extends InputType {
+  mask: string;
+}

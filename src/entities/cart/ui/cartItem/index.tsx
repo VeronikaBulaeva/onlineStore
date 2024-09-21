@@ -10,39 +10,41 @@ import { handleRemove } from "../../../../shared/lib/handleRemove";
 
 const CartItem: FC<ICartProduct> = ({ img, price, title, count, id }) => {
   return (
-    <div className={"cartItemCard"}>
-      <div className={"cartItem"}>
-        <img className={"cartItemImg"} src={img} alt={"Наушники"} />
-        <div className={"cartItemDescription"}>
-          <p className={"cartItemTitle"}>{title}</p>
-          <p className={"cartItemPrice"}>{price} ₽</p>
+    <div className="cartItemCard">
+      <div className="cartItem">
+        <img className="cartItemImg" src={img} alt="Наушники" />
+        <div className="cartItemDescription">
+          <p className="cartItemTitle">{title}</p>
+          <p className="cartItemPrice">{price.toLocaleString()} ₽</p>
         </div>
         <button
-          className={"cartItemDelete"}
+          className="cartItemDelete"
           onClick={() => {
             handleDelete({ id });
           }}
         >
-          <img className={"cartItemIcon"} src={Delete} alt={"Удалить"} />
+          <img className="cartItemIcon" src={Delete} alt="Удалить" />
         </button>
-        <p className={"cartItemTotalPrice"}>{price * count} ₽</p>
-        <div className={"cartItemCount"}>
+        <p className="cartItemTotalPrice">
+          {(price * count).toLocaleString()} ₽
+        </p>
+        <div className="cartItemCount">
           <button
-            className={"buttonCount"}
+            className="buttonCount"
             onClick={() => {
               handleRemove({ id });
             }}
           >
-            <img className={"buttonCountIcon"} src={Minus} alt={"Минус"} />
+            <img className="buttonCountIcon" src={Minus} alt="Минус" />
           </button>
-          <p className={"count"}>{count}</p>
+          <p className="count">{count}</p>
           <button
-            className={"buttonCount"}
+            className="buttonCount"
             onClick={() => {
               handleBuy({ img, id, title, price });
             }}
           >
-            <img className={"buttonCountIcon"} src={Plus} alt={"Плюс"} />
+            <img className="buttonCountIcon" src={Plus} alt="Плюс" />
           </button>
         </div>
       </div>
